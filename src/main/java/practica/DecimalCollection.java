@@ -27,6 +27,12 @@ public class DecimalCollection {
 
     }
 
+    public double media() {
+        double sum1 = sum();
+        double list = this.collection.size();
+        return  sum1 / list;
+    }
+
     private void validateIsNullOrEmpty() {
         if ((this.collection == null) || this.collection.isEmpty()) {
             throw new ArithmeticException("Null or Empty collection");
