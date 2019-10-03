@@ -30,4 +30,15 @@ class FractionTest {
         Assert.assertEquals(2, denominator);
     }
 
+    @Test
+    void testIsPropia() {
+        boolean respuesta = fraction.isPropia();
+        Assert.assertEquals(false, respuesta);
+    }
+
+    @Test
+    void testIsImpropia() {
+        boolean respuesta = fraction.isImpropia();
+        Assert.assertEquals(true, respuesta);
+    }
 }
