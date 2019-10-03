@@ -51,4 +51,17 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testMedial() {
+        double result = this.decimalCollection.media();
+        assertEquals(1.5, result);
+    }
+
+    @Test
+    void testMultiplicar() {
+        double result = this.decimalCollection.multiplicar();
+        assertEquals(-12.0, result, 10e-5);
+    }
+
+
 }

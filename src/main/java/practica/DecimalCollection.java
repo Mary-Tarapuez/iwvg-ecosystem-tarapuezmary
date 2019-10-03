@@ -22,9 +22,13 @@ public class DecimalCollection {
 
     public double sum() {
         this.validateIsNullOrEmpty();
-
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
+    }
 
+    public double media() {
+        double sum1 = sum();
+        double list = this.collection.size();
+        return sum1 / list;
     }
 
     private void validateIsNullOrEmpty() {
@@ -36,6 +40,16 @@ public class DecimalCollection {
     public double higher() {
         this.validateIsNullOrEmpty();
         return Collections.max(this.collection);
+
     }
 
+    public double multiplicar() {
+        this.validateIsNullOrEmpty();
+        double result = 1.0;
+        for (double valor : this.collection) {
+
+            result = valor * result;
+        }
+        return result;
+    }
 }
