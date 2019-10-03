@@ -52,13 +52,4 @@ public class Fraction {
         return valor == valor2;
     }
 
-    public int compararFraction() {
-        int valor = this.numerator / this.denominator;
-        int valor2 = this.numerator2 / this.denominator2;
-        if (valor > valor2) {
-            return valor;
-        }
-        return valor2;
-    }
-
 }

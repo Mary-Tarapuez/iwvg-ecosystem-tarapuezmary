@@ -49,11 +49,4 @@ class FractionTest {
         Assert.assertEquals(true, respuesta);
     }
 
-    @Test
-    void testCompararFraction() {
-        fraction = new Fraction(6, 2, 10, 4);
-        double respuesta = fraction.compararFraction();
-        Assert.assertEquals(3.0, respuesta, 0);
-    }
-
 }
