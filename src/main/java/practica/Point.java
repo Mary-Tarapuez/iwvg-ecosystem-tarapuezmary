@@ -6,9 +6,18 @@ public class Point {
 
     private int y;
 
+    private int z;
+
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Point(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+
     }
 
     public Point(int xy) {
@@ -32,12 +41,28 @@ public class Point {
         this.y -= origin.getY();
     }
 
+    public double modulez() {
+        return Math.sqrt((double) this.x * this.x + this.y * this.y + this.z * this.z);
+    }
+
+    public double phasez() {
+        return Math.atan(((double) this.y / this.x) / this.z);
+    }
+
+    public double absoluto() {
+        return Math.abs(((double) this.x / this.y) / this.z);
+    }
+
     public int getX() {
         return this.x;
     }
 
     public int getY() {
         return this.y;
+    }
+
+    public int getZ() {
+        return this.z;
     }
 
     @Override
