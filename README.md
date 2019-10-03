@@ -5,6 +5,7 @@
 ## Estado de código
 [![Build Status](https://travis-ci.org/Mary-Tarapuez/iwvg-ecosystem-tarapuezmary.svg?branch=develop)](https://travis-ci.org/Mary-Tarapuez/iwvg-ecosystem-tarapuezmary)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-ecosystem-tarapuezmary&metric=alert_status)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Aiwvg-ecosystem-tarapuezmary)
+[![BCH compliance](https://bettercodehub.com/edge/badge/Mary-Tarapuez/iwvg-ecosystem-tarapuezmary?branch=develop)](https://bettercodehub.com/)
 
 ## Ecosistema
 * Java
