@@ -7,9 +7,12 @@ import org.junit.jupiter.api.Test;
 public class UserTest {
     private User user1;
 
+    private User user2;
+
     @BeforeEach
     void before() {
         user1 = new User(3, "verdana", "Font family");
+        user2= new User(123456789, "Maricela", "Tarapuez");
     }
 
     @Test
@@ -34,6 +37,19 @@ public class UserTest {
     public void testGetFamilyName() {
         String familyName = user1.getFamilyName();
         Assert.assertEquals("Font family", familyName);
+    }
+
+    @Test
+    public void testNameMayuscula() {
+        String name = user1.nameMayuscula();
+        Assert.assertEquals("VERDANA", name);
+    }
+
+    @Test
+    public void testFullInfo(){
+        String fullinfo = user2.fullInfo();
+        Assert.assertEquals("MARICELA TARAPUEZ-123456789", fullinfo);
+
     }
 
 }
