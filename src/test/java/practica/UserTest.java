@@ -36,4 +36,10 @@ public class UserTest {
         Assert.assertEquals("Font family", familyName);
     }
 
+    @Test
+    public void testNameMayuscula() {
+        String name = user1.nameMayuscula();
+        Assert.assertEquals("VERDANA", name);
+    }
+
 }
