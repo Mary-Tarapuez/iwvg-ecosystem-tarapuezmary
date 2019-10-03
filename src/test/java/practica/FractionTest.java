@@ -41,4 +41,12 @@ class FractionTest {
         boolean respuesta = fraction.isImpropia();
         Assert.assertEquals(true, respuesta);
     }
+
+    @Test
+    void testIsEquivalente() {
+        fraction = new Fraction(5, 2, 10, 4);
+        boolean respuesta = fraction.isEquivalente();
+        Assert.assertEquals(true, respuesta);
+    }
+
 }
