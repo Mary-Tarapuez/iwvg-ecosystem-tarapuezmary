@@ -42,4 +42,8 @@ public class User {
         return this.name.toUpperCase();
     }
 
+    public String fullInfo() {
+        return this.fullName().toUpperCase() + "-" + this.number;
+    }
+
 }
