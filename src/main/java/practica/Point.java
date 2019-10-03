@@ -49,6 +49,10 @@ public class Point {
         return Math.atan(((double) this.y / this.x) / this.z);
     }
 
+    public double absoluto() {
+        return Math.abs(((double) this.x / this.y) / this.z);
+    }
+
     public int getX() {
         return this.x;
     }
@@ -58,7 +62,7 @@ public class Point {
     }
 
     public int getZ() {
-        return z;
+        return this.z;
     }
 
     @Override

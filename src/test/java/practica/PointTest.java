@@ -66,4 +66,11 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testAbsoluto() {
+        pointz = new Point(12, 2, 3);
+        double resultado = pointz.absoluto();
+        assertEquals(2.0, resultado, 10e-5);
+    }
+
 }
