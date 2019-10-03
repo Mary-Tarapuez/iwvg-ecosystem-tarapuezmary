@@ -36,12 +36,6 @@ class DecimalCollectionTest {
     }
 
     @Test
-    void testMedial() {
-        double result = this.decimalCollection.media();
-        assertEquals(1.5, result);
-    }
-
-    @Test
     void testSumArithmeticExceptionIfEmpty() {
         ArithmeticException exception = assertThrows(ArithmeticException.class, () -> new DecimalCollection().sum());
         LogManager.getLogger(this.getClass()).debug(exception.getMessage());
@@ -56,5 +50,18 @@ class DecimalCollectionTest {
     void testHigherArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
+
+    @Test
+    void testMedial() {
+        double result = this.decimalCollection.media();
+        assertEquals(1.5, result);
+    }
+
+    @Test
+    void testMultiplicar() {
+        double result = this.decimalCollection.multiplicar();
+        assertEquals(-12.0, result, 10e-5);
+    }
+
 
 }
